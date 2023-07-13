@@ -1,0 +1,123 @@
+/* Styles de base */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Styles pour le header */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h1 {
+  margin: 0;
+}
+
+.header-buttons {
+  display: flex;
+}
+
+.btn {
+  margin-left: 10px;
+  padding: 8px 16px;
+  border: none;
+  background-color: #555;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Styles pour le footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  height: 60px;
+}
+
+.slogan {
+  margin: 0;
+}
+
+.social-links a {
+  margin-left: 10px;
+}
+
+.social-links img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+/* Styles pour la mise en page générale */
+.wrapper {
+  min-height: calc(100% - 120px); /* La hauteur du header + footer */
+  margin-bottom: -120px; /* La hauteur du header + footer */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Styles pour les produits */
+#products-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product {
+  width: 200px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.product img {
+  width: 100%;
+}
+
+.product h2 {
+  margin: 0;
+}
+
+.product p {
+  margin: 0;
+  color: #888;
+}
+
+.product button {
+  display: block;
+  margin-top: 10px;
+}
+
+/* Styles pour la version mobile */
+@media (max-width: 600px) {
+  .header-buttons {
+    flex-direction: column;
+  }
+  
+  .btn {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  
+  .social-links a {
+    margin-left: 5px;
+  }
+  
+  .social-links img {
+    width: 16px;
+    height: 16px;
+  }
+}
