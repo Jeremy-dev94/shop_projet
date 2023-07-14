@@ -121,25 +121,39 @@ footer {
 /* Styles pour le carrousel */
 .carousel {
   width: 100%;
-  height: 400px;
+  height: 800px;
   position: relative;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .carousel-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
   transition: opacity 0.3s;
 }
 
-.carousel-image.active {
-  opacity: 1;
-  z-index: 1;
+.carousel-image:hover {
+  opacity: 0.7;
 }
 
+.carousel-controls {
+  margin-top: 10px;
+  text-align: center;
+}
 
+.carousel-controls button {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+  padding: 0;
+  margin: 0 10px;
+}
 
 
 
