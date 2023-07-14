@@ -42,20 +42,19 @@ footer {
   color: #fff;
   padding: 20px;
   height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .slogan {
   margin: 0;
 }
 
-.social-links a {
-  margin-left: 10px;
-}
-
 .social-links img {
   width: 20px;
   height: 20px;
-  vertical-align: middle;
+  margin-left: 10px;
 }
 
 /* Styles pour la mise en page générale */
@@ -101,6 +100,49 @@ footer {
   margin-top: 10px;
 }
 
+/* Styles pour le bouton devis perso */
+.custom-quote-button {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background-color: #555;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.custom-quote-button:hover {
+  background-color: #333;
+}
+
+/* Styles pour le carrousel */
+.carousel {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.carousel-image.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+
+
+
+
 /* Styles pour la version mobile */
 @media (max-width: 600px) {
   .header-buttons {
@@ -112,12 +154,9 @@ footer {
     margin-top: 10px;
   }
   
-  .social-links a {
-    margin-left: 5px;
-  }
-  
   .social-links img {
     width: 16px;
     height: 16px;
+    margin-left: 5px;
   }
 }
